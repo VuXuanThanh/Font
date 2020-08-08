@@ -1,0 +1,73 @@
+:root{
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ef4d2d;
+    --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --vavbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height)-var(--vavbar-height));
+}
+* {
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1.6rem;/* 1rem = 10px*/
+    
+}
+.gird{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.gird__full-width{
+    width: 100%;
+}
+.gird__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* button style */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+   
+   
+}
+
+.btn.btn--primary{
+    color: var(--while-color);
+    background-color: var(--primary-color);
+
+}
+
+.btn.btn--disabled{
+    color: #cccccc;
+    cursor: default;
+    background-color: #6e6c6c99;
+ 
+}
